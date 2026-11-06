@@ -1,0 +1,61 @@
+{
+  "task": "summarization",
+  "dataset": "KazSumm",
+  "data_sha256": "ddee2772628f8200178634634a6fa4d7813ef789ee4d5d958f8fc243efb98eb1",
+  "n_rows_test": 2628,
+  "n_sample": 500,
+  "seed": 42,
+  "bootstrap_resamples": 2000,
+  "confidence_level": 0.95,
+  "python": "3.12.3",
+  "rouge_score": "0.1.2",
+  "sacrebleu": "2.6.0",
+  "timestamp": "2026-10-28T19:12:05+05:00",
+  "results": {
+    "lead_1": {
+      "rouge_l": 18.4,
+      "rouge_l_ci_95": [17.2, 19.6],
+      "chrf_pp": 22.1,
+      "chrf_ci_95": [20.9, 23.4],
+      "bertscore_f1": 0.812,
+      "bertscore_ci_95": [0.807, 0.817],
+      "model_name": "Lead-1 Baseline"
+    },
+    "llama": {
+      "rouge_l": 22.1,
+      "rouge_l_ci_95": [20.6, 23.6],
+      "chrf_pp": 27.3,
+      "chrf_ci_95": [25.8, 28.9],
+      "bertscore_f1": 0.834,
+      "bertscore_ci_95": [0.830, 0.838],
+      "model_name": "meta-llama/Llama-3.1-8B-Instruct"
+    },
+    "sherkala": {
+      "rouge_l": 25.9,
+      "rouge_l_ci_95": [24.3, 27.4],
+      "chrf_pp": 31.7,
+      "chrf_ci_95": [30.1, 33.3],
+      "bertscore_f1": 0.847,
+      "bertscore_ci_95": [0.843, 0.851],
+      "model_name": "issai/Sherkala-Chat-8B"
+    },
+    "gpt4o": {
+      "rouge_l": 31.2,
+      "rouge_l_ci_95": [29.5, 32.8],
+      "chrf_pp": 38.4,
+      "chrf_ci_95": [36.7, 40.1],
+      "bertscore_f1": 0.868,
+      "bertscore_ci_95": [0.864, 0.872],
+      "model_name": "gpt-4o-2024-11-20"
+    },
+    "gemini": {
+      "rouge_l": 29.8,
+      "rouge_l_ci_95": [28.1, 31.4],
+      "chrf_pp": 36.9,
+      "chrf_ci_95": [35.2, 38.6],
+      "bertscore_f1": 0.863,
+      "bertscore_ci_95": [0.859, 0.867],
+      "model_name": "gemini-1.5-pro-002"
+    }
+  }
+}

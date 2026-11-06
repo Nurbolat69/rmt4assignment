@@ -1,0 +1,27 @@
+# Core scientific / NLP evaluation
+sacrebleu>=2.6.0
+rouge-score>=0.1.2
+bert-score>=0.3.13
+
+# Data & numerics
+numpy>=1.26.0
+pandas>=2.0.0
+scipy>=1.11.0
+
+# HuggingFace ecosystem
+transformers>=4.44.0
+torch>=2.4.0
+datasets>=2.20.0
+accelerate>=0.33.0
+sentencepiece>=0.2.0
+protobuf>=5.27.0
+
+# Commercial API SDKs
+openai>=1.40.0
+google-generativeai>=0.7.0
+
+# Visualisation
+matplotlib>=3.8.0
+
+# Utilities
+tqdm>=4.66.0

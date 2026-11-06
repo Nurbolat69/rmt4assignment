@@ -1,0 +1,103 @@
+{
+  "task": "question_answering",
+  "dataset": "KazMMLU",
+  "data_sha256": "ddee2772628f8200178634634a6fa4d7813ef789ee4d5d958f8fc243efb98eb1",
+  "n_questions_after_checks": 9786,
+  "n_sample": 998,
+  "seed": 42,
+  "bootstrap_resamples": 2000,
+  "confidence_level": 0.95,
+  "python": "3.12.3",
+  "numpy": "2.4.4",
+  "pandas": "3.0.2",
+  "timestamp": "2026-10-28T14:23:11+05:00",
+  "results": {
+    "random": {
+      "accuracy": 23.5,
+      "ci_95": [21.0, 26.1],
+      "n_correct": 235,
+      "n_total": 998,
+      "model_name": "Random-Baseline"
+    },
+    "llama": {
+      "accuracy": 41.3,
+      "ci_95": [38.2, 44.4],
+      "n_correct": 412,
+      "n_total": 998,
+      "model_name": "meta-llama/Llama-3.1-8B-Instruct"
+    },
+    "sherkala": {
+      "accuracy": 46.8,
+      "ci_95": [43.7, 50.0],
+      "n_correct": 467,
+      "n_total": 998,
+      "model_name": "issai/Sherkala-Chat-8B"
+    },
+    "gpt4o": {
+      "accuracy": 71.4,
+      "ci_95": [68.5, 74.2],
+      "n_correct": 713,
+      "n_total": 998,
+      "model_name": "gpt-4o-2024-11-20"
+    },
+    "gemini": {
+      "accuracy": 68.9,
+      "ci_95": [66.0, 71.8],
+      "n_correct": 688,
+      "n_total": 998,
+      "model_name": "gemini-1.5-pro-002"
+    }
+  },
+  "subgroup_results": {
+    "gpt4o_by_subject": {
+      "Math": 83.5,
+      "Physics": 80.6,
+      "Biology": 74.0,
+      "Chemistry": 71.2,
+      "World_History": 75.0,
+      "Kazakh_History": 68.3,
+      "Kazakh_Language": 69.1,
+      "Kazakh_Literature": 65.4,
+      "Geography": 70.2,
+      "Law": 72.9
+    },
+    "llama_by_subject": {
+      "Math": 52.4,
+      "Physics": 44.9,
+      "Biology": 38.5,
+      "Chemistry": 36.5,
+      "World_History": 46.2,
+      "Kazakh_History": 42.3,
+      "Kazakh_Language": 40.2,
+      "Kazakh_Literature": 36.5,
+      "Geography": 39.4,
+      "Law": 42.4
+    }
+  },
+  "sample_by_subject": {
+    "Geography": 104,
+    "Kazakh_Literature": 104,
+    "World_History": 104,
+    "Biology": 104,
+    "Kazakh_History": 104,
+    "Chemistry": 104,
+    "Math": 103,
+    "Physics": 98,
+    "Kazakh_Language": 97,
+    "Law": 59,
+    "Informatics": 16,
+    "Reading_Literacy": 1
+  },
+  "n_subjects": 12,
+  "options_per_question": {
+    "4": 7257,
+    "5": 2529
+  },
+  "answer_key_share": {
+    "A": 0.2437,
+    "B": 0.2397,
+    "D": 0.2384,
+    "C": 0.2293,
+    "E": 0.0488
+  }
+}

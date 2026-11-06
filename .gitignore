@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.so
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# API keys / secrets
+.env.local
+secrets.yaml
+api_keys.txt
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Data (large files – download separately; see README for links)
+data/
+*.jsonl.gz
+*.csv.gz
+
+# Model caches
+*.bin
+*.safetensors
+*.gguf
+model_cache/
+hf_cache/
+
+# Generated figures (reproducible from generate_figures.py)
+figures/*.png
+figures/*.pdf
+
+# OS artefacts
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp

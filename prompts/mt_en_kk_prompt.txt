@@ -1,0 +1,4 @@
+Translate the following English sentence to Kazakh. Output only the translation, nothing else.
+
+English: {source}
+Kazakh:
